@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificações</title>
+    <link rel="icon" href="../IMG/logopeq.png" type="image/x-icon">
+    <link rel="stylesheet" href="./notificacao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+        <div style="flex: 1; text-align: left;">
+            <div class="icons header-icons-left">
+                <div class="fas fa-bars" id="menu"></div>
+                <div class="pesquisa">
+                    <span class="material-icons hpesicon1">search</span>
+                    <input class="htextinput" placeholder="Search.." type="text" name="pesquisa">
+                </div>
+            </div>
+        <div style="flex: 1; text-align: center;">
+            <img src="../IMG/Logo.png" width="30%" alt="Logo">
+        </div>
+        <div style="flex: 1; text-align: right;">
+            <div class="icons header-icons-right">
+                <div class="fas fa-shopping-cart hpesicon" title="Carrinho"></div>
+                <div class="fas fa-comment" id="noti-btn" title="Notificações"></div>
+                <button class="hbutton">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../menus/typeselect.html">Menus</a></li>
+            <li><a href="../about/about.html">About</a></li>
+        </ul>
+    </nav>
+<main>
+        <div class="quadradin" id="mainContainer">
+            <div class="begindiv">
+                <h2>Your Notifications</h2>
+                <button id="removeAllButton">Clear all</button>
+            </div>
+                <div class="ndiv">
+                    <div>
+                    <span class="material-icons hpesicon">priority_high</span>
+                    <h2>Warning</h2>
+                    <p>18-11-2024</p>
+                    <p>Your tire stock is almost running out.</p>
+                </div>
+                <button onclick="removerDiv(this)">Remove</button>
+                </div>
+                <div class="ndiv">
+                    <div>
+                    <span class="material-icons hpesicon">newspaper</span>
+                    <h2>New</h2>
+                    <p>18-11-2024</p>
+                    <p>Black Friday is almost here.</p>
+                </div>
+                <button onclick="removerDiv(this)">Remove</button>
+                </div>
+                <div class="ndiv">
+                <div>
+                    <span class="material-icons hpesicon">mail</span>
+                    <h2>Info</h2>
+                    <p>18-11-2024</p>
+                    <p>One of your tires has been purchased, stay tuned for when stock runs out.</p>
+                </div>
+                <button onclick="removerDiv(this)">Remove</button>
+                </div>
+        </div>
+</main>
+    <script src="notificacao.js"></script>
+</body>
+
+</html>

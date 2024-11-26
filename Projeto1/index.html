@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitstop</title>
+    <link rel="icon" href="./IMG/logopeq.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+            <div style="flex: 1; text-align: left;">
+                <div class="hpes">
+                    <span class="material-icons hpesicon1">search</span>
+                    <input class="htextinput" placeholder="Search.." type="text" name="pesquisa">
+                    <span class="material-icons hpesicon2">menu</span>
+                </div>
+            </div>
+            <div style="flex: 1; text-align: center;">
+                <img src="IMG/Logo.png" width="30%" alt="Logo">
+            </div>
+            <div style="flex: 1; text-align: right;" >
+                <div>
+                    <form action="Login/login.html", class="cantinho">
+                        <button class="material-icons hpesicon">shopping_cart</button>
+                        <input type="checkbox">
+                        <button class="material-icons hpesicon">notifications</button>
+                        <button class="hbutton">Login</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <div class="icons">
+            <div id="search-btn"></div>
+            <div id="cart-btn"></div>
+            <div id="menu-btn"></div>
+            <div id="login-btn"></div>
+
+        </div>
+
+    <!-- Slideshow Section -->
+    <section class="slideshow">
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="./IMG/slides.png" style="width:100%">
+              </div>
+            
+              <div class="mySlides fade">
+                <img src="./IMG/slides (1).png" style="width:100%">
+              </div>
+            
+              <div class="mySlides fade">
+                <img src="./IMG/slides (2).png" style="width:100%">
+              </div>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+    </section>
+
+    <script src="./script.js"></script> <!-- Link para o arquivo JavaScript externo -->
+</body>
+</html>

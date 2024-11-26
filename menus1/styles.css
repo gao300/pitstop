@@ -1,0 +1,239 @@
+p{color:white;font-size: 14px;}
+.image-button {background-color: #ff7300; border: none; padding: 10px; cursor: pointer; border-radius: 5px;}
+.image-button:hover{background-color: #ffb77d;}
+.image-button img {height: 100px; width: 100px; vertical-align: middle;margin-bottom: 5px;}
+.quadradin{background-color: #393939;padding: 10px;margin-bottom: 10px;width: 90%;display: flex;flex:wrap;justify-content: space-between;flex-wrap: wrap;gap: 10px;align-items: center;}
+.quac{width: 100%;display: flex;flex:wrap;flex-wrap: wrap;gap: 30px;padding-left: 10px;padding-right: 10px;align-items: center;}
+.coiso{display: flex;flex:wrap;justify-content: center;align-items: center;}
+main{margin:10px}
+.tipo{padding-left: 5%;margin-bottom: 10px;}
+.linkt{padding-left: 5px;text-decoration-line: underline;text-underline-offset: 5px;color: white;cursor: pointer;}
+.linkt:active {color: #ff7300;text-decoration-color: #ff7300;}
+.linkt.active {color: #ff7300;text-decoration-color: #ff7300; background-color: #1E1E1E}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --bg: #1E1E1E;
+    --main-color: #C00F0C;
+    --bg-dark: #1E1E1E;
+    --white: #FFFFFF;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 65.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5rem;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da página */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+main {
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+}
+
+
+.icons div, .icons span, .icons .material-icons {
+    font-size: 24px;
+    color: white;
+    margin: 0 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.icons div:hover, .icons span:hover, .icons .material-icons:hover {
+    background-color: #1E1E1E;
+    color: var(--main-color);
+}
+
+.sidebar {
+    position: fixed;
+    top: 105px;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: var(--main-color);
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.hbutton {
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 12px;
+    font-size: 14px;
+    background-color: var(--main-color);
+    width: 90px;
+}
+
+.hbutton:hover {
+    background-color: white; 
+    color: black;
+}
+
+/* Outras regras de estilo */
+.pesquisa {
+    position: relative;
+    left: 15%;
+}
+
+.hpesicon1 {
+    position: absolute;
+    left: 170%;
+    color: white;
+    font-size: 20px;
+}
+
+.htextinput {
+    background-color: var(--main-color); 
+    color: white;
+    border: none; 
+    border-radius: 20px;
+    outline: none; 
+    font-size: 14px;
+    padding: 5px 10px 5px 40px;  /* Deixa espaço suficiente para a lupa dentro da caixa */
+    width: 300px;
+    height: 30px;
+}
+
+.htextinput::placeholder {
+    color: white; 
+    opacity: 1;
+    font-size: 14px;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: auto; /* Garante que o footer vá para o fundo da página */
+}
+
+footer .footer1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+footer .divp p {
+    margin: 5px 0;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .htextinput {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #C00F0C;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+        transition: right .3s;
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+    .header .htextinput a {
+        color: white;
+        display: block;
+        margin: 1.5rem;
+        padding: 1.5rem;
+        font-size: 2rem;
+    }
+}

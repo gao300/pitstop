@@ -1,0 +1,74 @@
+.hbutton {
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 12px;
+    font-size: 14px;
+    background-color: #c00f0c;
+    width: 90px;
+}
+.hbutton:hover {
+    background-color: white; 
+    color:black;
+}
+.htextinput {
+    background-color: #c00f0c; 
+    color: white;
+    border: none; 
+    border-radius: 20px;
+    outline: none; 
+    font-size: 14px;
+    padding:5px;
+    width: 300px;
+    padding-left: 50px; 
+    height: 30px;
+}
+.htextinput::placeholder {
+    color: white; 
+    opacity: 1;
+    font-size: 14px;
+}
+.hpes {
+    position: relative; 
+    width: 100%; 
+    max-width: 400px;
+}
+.hpesicon {
+    font-size: 18px; 
+    color: white;
+    background: none;
+    border: none;
+}
+.hpesicon1 {
+    position: absolute;
+    left: 320px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px; 
+    color: white; 
+    pointer-events: none;
+}
+.hpesicon2 {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: white; 
+    pointer-events: none;
+}
+.cantinho{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+body{background-color: #1e1e1e;}
+
+p{color:white;font-size: 15px;}
+.imgtext{display: flex;flex-wrap: wrap;justify-content: space-around;gap: 10px;padding: 10px;}
+.imgtextd {padding: 20px;flex: 1 1 100px;word-wrap: break-word;width: 50%;}
+.imgt{display: flex;flex-wrap: wrap;justify-content: center;width: 500px;}
+h2{display: flex;flex-wrap: wrap;justify-content: center;color:white;}

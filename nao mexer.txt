@@ -1,0 +1,114 @@
+
+//js
+// Inicializa o slideshow com o primeiro slide
+let slideIndex = 3;
+showSlides(slideIndex);
+
+// Funções de navegação entre os slides
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Controla o slide atual
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+// Função para mostrar o slide atual
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+
+  // Ajusta o slideIndex se ele estiver fora dos limites
+  if (n > slides.length) { slideIndex = 1; }
+  if (n < 1) { slideIndex = slides.length; }
+
+  // Esconde todos os slides
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // Remove a classe "active" de todos os dots
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  // Mostra o slide atual e define o dot como ativo
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
+// Função de slideshow automático
+function autoShowSlides() {
+  slideIndex++;
+  showSlides(slideIndex);
+  setTimeout(autoShowSlides, 10000); // Muda o slide automaticamente a cada 10 segundos
+}
+
+// Inicia o slideshow automático
+autoShowSlides();
+
+
+
+//css
+
+/* Estilo geral para o slideshow */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Ajusta a largura máxima do contêiner */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Estilo para os slides (imagens e vídeos) */
+.mySlides {
+    display: none; /* Esconde os slides por padrão */
+    width: 100%;
+}
+
+/* Adicionando uma transição suave para o efeito de fade */
+.fade {
+    animation: fade 2s ease-in-out infinite;
+}
+
+/* Animação para transição de fade */
+@keyframes fade {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #ffae00;
+}
+  
+  /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --bg: #1E1E1E;
+    --main-color: #C00F0C;
+    --bg-dark: #1E1E1E;
+    --white: #FFFFFF;
+}
+
+.icons div, .icons span, .icons .material-icons {
+    font-size: 24px;
+    color: white;
+    margin: 0 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.icons div:hover, .icons span:hover, .icons .material-icons:hover {
+    background-color: #1E1E1E;
+    color: var(--main-color);
+}
+
+.sidebar {
+    position: fixed;
+    top: 105px;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: var(--main-color);
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.hbutton {
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 12px;
+    font-size: 14px;
+    background-color: var(--main-color);
+    width: 90px;
+}
+
+.hbutton:hover {
+    background-color: white; 
+    color: black;
+}
+
+/* Outras regras de estilo */
+.pesquisa {
+    position: relative;
+    left: 15%;
+}
+
+.hpesicon1 {
+    position: absolute;
+    left: 170%;
+    color: white;
+    font-size: 20px;
+}
+
+.htextinput {
+    background-color: var(--main-color); 
+    color: white;
+    border: none; 
+    border-radius: 20px;
+    outline: none; 
+    font-size: 14px;
+    padding: 5px 10px 5px 40px;  /* Deixa espaço suficiente para a lupa dentro da caixa */
+    width: 300px;
+    height: 30px;
+}
+
+.htextinput::placeholder {
+    color: white; 
+    opacity: 1;
+    font-size: 14px;
+}
+
+body{background-color: #1e1e1e;}
+
+p{color:white;font-size: 15px;  text-align: justify;text-justify: inter-word;}
+.imgtext{display: flex;flex-wrap: wrap;justify-content: space-around;gap: 10px;padding: 10px;}
+.imgtextd {padding: 20px;flex: 1 1 100px;word-wrap: break-word;width: 50%;}
+.imgt{display: flex;flex-wrap: wrap;justify-content: center;width: 500px;}
+h2{display: flex;flex-wrap: wrap;justify-content: center;color:white;}
+
+html {
+    font-size: 65.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5rem;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da página */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+main {
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+}

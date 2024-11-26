@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitstop</title>
+    <link rel="icon" href="../IMG/logopeq.png" type="image/x-icon">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+        <div style="flex: 1; text-align: left;">
+            <div class="icons header-icons-left">
+                <div class="fas fa-bars" id="menu"></div>
+
+            </div>
+        </div>
+        <div style="flex: 1; text-align: center;">
+            <img src="../IMG/Logo.png" width="30%" alt="Logo">
+        </div>
+        <div style="flex: 1; text-align: right;">
+            <div class="icons header-icons-right">
+                <div class="fas fa-shopping-cart hpesicon" title="Carrinho"></div>
+                <a class="material-icons hpesicon" href="../notificacao/notificacao.html">notifications</a>
+            </div>
+        </div>
+    </header>
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>            
+            <li><a href="../menus1/typeselect.html">Menus</a></li>
+            <li><a href="../about/about.html">About</a></li>
+        </ul>
+    </nav>
+<body>
+    <main>
+        <section class="logcrea">
+            <!-- Login -->
+            <div class="ls">
+                <h2>Log in to your PITSTOP account</h2>
+                <form action="form3.html" method="post">
+                    <label for="email">Email</label>
+                    <input id="email" class="pre" type="email" name="Email" required>
+                    
+                    <label for="password">Password</label>
+                    <input id="password" class="pre" type="password" name="Pass" required>
+                    
+                    <button class="log">Login</button>
+                </form>
+            </div>
+            <!-- Criação de conta -->
+            <div class="ls">
+                <h2>Create an account</h2>
+                <p style="font-size: 20px;">Join our online platform. A world full of news is just a click away. Join us to monetize your stock.</p>
+                <form action="./singup.html">
+                    <button class="cre">Create Account</button>
+                </form>
+            </div>
+        </section>
+    </main>         
+    <script src="./js.js"></script>
+</body>
+</html>

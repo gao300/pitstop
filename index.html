@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitstop</title>
+    <link rel="icon" href="./IMG/logopeq.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+        <div style="flex: 1; text-align: left;">
+            <div class="icons header-icons-left">
+                <div class="fas fa-bars" id="menu"></div>
+                <div class="pesquisa">
+                    <span class="material-icons hpesicon1">search</span>
+                    <input class="htextinput" placeholder="Search.." type="text" name="pesquisa">
+                </div>
+            </div>
+        </div>
+        <div style="flex: 1; text-align: center;">
+            <img src="IMG/Logo.png" width="30%" alt="Logo">
+        </div>
+        <div style="flex: 1; text-align: right;">
+            <div class="icons header-icons-right">
+                <div class="fas fa-shopping-cart hpesicon" title="Carrinho"></div>
+                <a class="material-icons hpesicon" href="./notificacao/notificacao.html">notifications</a>
+                <button class="hbutton">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="./index.html">Home</a></li>            
+            <li><a href="./menus1/typeselect.html">Menus</a></li>
+            <li><a href="./about/about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slideshow Section -->
+    <section class="slideshow">
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="./IMG/slides.png" style="width:100%">
+              </div>
+            
+              <div class="mySlides fade">
+                <img src="./IMG/slides (1).png" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">  
+                <video autoplay loop muted style="width:100%">
+                <source src="./IMG/Black_Friday.mp4" type="video/mp4">
+              </div>
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+          </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <section class="footer1">
+            <img src="IMG/Logo.png" width="200" alt="Pitstop Logo">
+            <div>
+                <h2>Pitstop</h2>
+                <p>Mechanical Materials</p>
+            </div>
+        </section>
+        <div class="divp">
+            <p>See our <a href="#">privacy policies</a></p>
+            <p>Contact Us</p>
+            <p>
+                <span class="material-icons hpesicon">mail</span> pitstop@gmail.com 
+                <span class="material-icons hpesicon">call</span> +351 961 236 340 
+                <span class="material-icons hpesicon">smartphone</span> +351 966 623 331
+            </p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
