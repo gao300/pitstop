@@ -248,33 +248,19 @@ footer .divp p {
     html {
         font-size: 55%;
     }
-    .header {
-        padding: 1.5rem 2rem;
+
+    #menu {
+        position: fixed;
+        margin-top:-10%;
     }
 
-    #menu-btn {
-        display: inline-block;
+    .pesquisa{
+        position: fixed;
+        margin-top: 5%;
     }
 
-    .header .htextinput {
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        background: #C00F0C;
-        width: 30rem;
-        height: calc(100vh - 9.5rem);
-        transition: right .3s;
+    #img {
+        
     }
 
-    .header .navbar.active {
-        right: 0;
-    }
-
-    .header .htextinput a {
-        color: white;
-        display: block;
-        margin: 1.5rem;
-        padding: 1.5rem;
-        font-size: 2rem;
-    }
 }
