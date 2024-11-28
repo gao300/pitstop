@@ -12,7 +12,7 @@ let sidebar = document.querySelector('#sidebar'); // Menu lateral
 // Redirecionamento ao clicar no ícone do carrinho
 if (cartBtn) {
   cartBtn.onclick = () => {
-    window.location.href = './Carrinho/carrinho_produtos.html'; // Redireciona para a página do carrinho
+    window.location.href = '../Carrinho/carrinho_produtos.html'; // Redireciona para a página do carrinho
   };
 }
 
